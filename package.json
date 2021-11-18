@@ -1,0 +1,19 @@
+{
+  "name": "user-profile",
+  "version": "1.0.0",
+  "description": "it's a MERN user profile project which you can edit information there and see other people profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhamposhtiban/user-profile.git"
+  },
+  "author": "Elham Poshtiban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elhamposhtiban/user-profile/issues"
+  },
+  "homepage": "https://github.com/elhamposhtiban/user-profile#readme"
+}
