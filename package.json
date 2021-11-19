@@ -13,7 +13,6 @@
     "heroku-postbuild": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
-  
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,14 @@
   },
   "homepage": "https://github.com/elhamposhtiban/user-profile#readme",
   "dependencies": {
+    "error-ex": "git+https://github.com/Qix-/node-error-ex.git",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "init": "^0.1.2",
     "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
   }
 }
