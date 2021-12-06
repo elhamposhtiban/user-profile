@@ -1,19 +1,16 @@
 // const routes = require("./routes/route-index");
-const express = require("express");
-const path = require("path");
-const mongoose = require("mongoose");
-// const bodyParser = require("body-parser");
+const express = require('express');
+const path = require('path');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parse');
 
 
 const PORT = process.env.PORT || 3003;
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/weddingplanner");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userprofile");
 const app = express();
-// app.use(passport.initialize());
-// require('./passport')(passport);
-
-// app.use(passport.session());
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.json());
 
 // // Serve up static assets (usually on heroku)

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/elhamposhtiban/user-profile#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "error-ex": "git+https://github.com/Qix-/node-error-ex.git",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
