@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const PORT = process.env.PORT || 3003;
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userprofile");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userprofile");
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
