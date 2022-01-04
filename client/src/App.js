@@ -1,5 +1,5 @@
 
-import UserProfileForm from './Component/UserProfileForm'
+import UserProfileForm from './Component/UserProfileForm/UserProfileForm'
 
 function App() {
   return (

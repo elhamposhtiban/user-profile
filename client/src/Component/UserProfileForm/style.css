@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(
+      75deg,
+      rgb(201, 230, 225) 0%,
+      rgb(55, 90, 55) 100%
+    );
+  }
+.user-container {
+min-height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.userForm-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.user-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 8px;
+    border: 2px solid #253f2f;
+    margin-top: 4%;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
