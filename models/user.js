@@ -11,20 +11,29 @@ const UserSchema = new Schema(
       required: true,
     },
 
+    email: {
+      type: String,
+      match: [
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+        'Please add a valid email address.',
+      ],
+      required: [true, 'Please enter Email Address']
+    },
+
     description: {
       type: String,
       required: true,
     },
 
-    creationDate: {
-      type: Date,
-      default: Date.now,
-    },
+    // creationDate: {
+    //   type: Date,
+    //   default: Date.now,
+    // },
 
-    user_id: {
-      type: String,
-      required: true,
-    },
+    // user_id: {
+    //   type: String,
+    //   required: true,
+    // },
   },
   { timestamps: true }
 );
